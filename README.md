@@ -1,32 +1,76 @@
-# AI_Projects_In_Polish
-Some simple projects from AI issues in translation into Polish.
+<a id="top"></a>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-04-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-04-light.svg">
+  <img alt="Projekt 04 — Boston Housing — Ridge, Lasso i ElasticNet" src="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-04-light.svg" width="100%">
+</picture>
+
+<br>
+
+[**← Wszystkie projekty**](https://github.com/FilipTw/AI_Projects_In_Polish) &nbsp;·&nbsp; [Notatnik](./Twardawa_Filip_ML.ipynb) &nbsp;·&nbsp; [Raport PDF](./Twardawa_Filip_ML.pdf)
+
+<br>
+
+## Regresja liniowa i regularyzacja
+
+### Cel
+
+Celem ćwiczenia było zastosowanie technik uczenia nadzorowanego do przewidywania mediany cen nieruchomości w Bostonie (kolumna MEDV) na podstawie dostępnych cech opisujących dane społeczno-ekonomiczne i demograficzne, w szczególności z użyciem regresji liniowej. Ćwiczenie obejmowało również wprowadzenie regularyzacji (regresja grzbietowa, Lasso i ElasticNet) w celu poprawy efektywności modelu.
+
+### Zbiór danych
+
+Zbiór opisuje ceny nieruchomości w Bostonie i składa się z 506 wierszy oraz 13 cech opisowych, m.in. CRIM (wskaźnik przestępczości), RM (średnia liczba pokoi) czy LSTAT (odsetek mieszkańców o niskim statusie). Przewidywaną cechą była MEDV — mediana wartości nieruchomości w tysiącach dolarów.
+
+<details>
+<summary><b>Opis cech</b></summary>
+<br>
+
+| Cecha | Opis |
+|:--|:--|
+| `CRIM` | wskaźnik przestępczości w mieście |
+| `ZN` | odsetek dużych działek — powyżej 2500 m² |
+| `INDUS` | odsetek terenów przemysłowych w mieście |
+| `CHAS` | 1, jeśli teren leży przy rzece Charles, w przeciwnym razie 0 |
+| `NOX` | stężenie tlenków azotu |
+| `RM` | średnia liczba pokoi w budynku |
+| `AGE` | odsetek starych budynków — sprzed 1940 roku |
+| `DIS` | ważona odległość od centrów pracy w Bostonie |
+| `RAD` | wskaźnik dostępności głównych dróg |
+| `TAX` | podatek od nieruchomości liczony od 10 000 USD |
+| `PTRATIO` | liczba uczniów na nauczyciela w mieście |
+| `B` | wskaźnik demograficzny — zmienna historyczna |
+| `LSTAT` | odsetek mieszkańców o niskim statusie |
+| **`MEDV`** | **mediana wartości domów na danym obszarze, w tys. USD** |
+
+</details>
+
+### Metody
+
+**A · Regresja liniowa**<br>
+Podstawowy model regresji, punkt odniesienia dla modeli z regularyzacją.
+
+**B · Regresja grzbietowa (Ridge)**<br>
+Regresja liniowa z regularyzacją L2.
+
+**C · Lasso**<br>
+Regresja liniowa z regularyzacją L1.
+
+**D · ElasticNet**<br>
+Połączenie regularyzacji L1 i L2.
+
+### Uruchomienie
+
+```bash
+git clone --branch Project_04 --single-branch https://github.com/FilipTw/AI_Projects_In_Polish.git
+cd AI_Projects_In_Polish
+jupyter notebook Twardawa_Filip_ML.ipynb
+```
+
+<br>
 
 ---
 
-1 Objective.
-The purpose of the exercise was to apply supervised learning techniques to predict the value of median
-real estate prices in Boston (MEDV column) based on available characteristics describing the data
-socioeconomic and demographic data, in particular using linear regression. The exercise also included the introduction of regularization (ridge regression, Lasso and ElasticNet) to improve the efficiency of the model.
+<sub>[← 03 · Skalowanie cech](https://github.com/FilipTw/AI_Projects_In_Polish/tree/Project_03) &nbsp;&nbsp;|&nbsp;&nbsp; [Wszystkie projekty](https://github.com/FilipTw/AI_Projects_In_Polish) &nbsp;&nbsp;|&nbsp;&nbsp; [05 · Regresja logistyczna →](https://github.com/FilipTw/AI_Projects_In_Polish/tree/Project_05)</sub>
 
-
-```Data sets:
-The data used in the task is a set describing real estate prices in Boston, consisting of 506 rows
-and 13 descriptive characteristics, including CRIM (crime rate), RM (average number of rooms) or LSTAT
-(percentage of poor residents).
-The predicted feature was MEDV, representing the median property value
-in thousands of dollars.
-CRIM - the city's crime rate,
-ZN - percentage of “large plots of land” - greater than 2,500 m2,
-INDUS - percentage of industrial sites in the city,
-CHAS - if the site is next to the Charles River -1, otherwise 0,
-NOX - concentration of nitrogen oxides,
-RM - average number of rooms in a building,
-AGE - percentage of “old buildings” - built before 1940,
-DIS - weighted distance from job centers in Boston,
-RAD - accessibility index to major roads,
-TAX - property tax value calculated on $10,000,
-PTRATIO - ratio of students per teachers in the city,
-B - percentage of people of African-American descent,
-LSTAT - percentage of residents classified as poor (percentage of poverty),
-MEDV - median value of homes from a given area (in thousands of dollars).
-```
+<sub>Autor: Filip Twardawa &nbsp;·&nbsp; Licencja [MIT](LICENSE) &nbsp;·&nbsp; [Do góry ↑](#top)</sub>

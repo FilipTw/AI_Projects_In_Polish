@@ -1,25 +1,50 @@
-# AI_Projects_In_Polish
-Some simple projects from AI issues in translation into Polish.
+<a id="top"></a>
 
-## APPLICATION OF NEURAL NETWORKS AND DEEP LEARNING
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-02-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-02-light.svg">
+  <img alt="Projekt 02 — CIFAR-10 — sieci konwolucyjne" src="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-02-light.svg" width="100%">
+</picture>
 
->> 1. Objective:
->> 
->>The goal of our project is to build effective deep learning models,
->>that will be able to classify images from the “CIFAR-10” dataset.
+<br>
 
-## Methods:
->> A. Base CNN Model.
->> 
->>This is a basic model based on convolutional neural networks(CNN).
->>It contains several convolutional and pooling layers, which makes it possible to extract the key features of the images. The model has a relatively simple architecture, which allows >>for quick training and initial results.
->>Due to the limited number of layers, the model can have difficulty
->>capturing more complex patterns in the data.
+[**← Wszystkie projekty**](https://github.com/FilipTw/AI_Projects_In_Polish) &nbsp;·&nbsp; [Notatnik](./Muzykant_Wowra_Twardawa_PSI_3.ipynb) &nbsp;·&nbsp; [Raport PDF](./Muzykant_Wowra_Twardawa_PSI_3.pdf)
 
->>B. Intermediate CNN Model
->>The second model is an extension of the base model.
->>It contains more convolutional layers and a larger number of neurons in the dense layer,
->>which allows for more accurate extraction of image features and improved accuracy of classification.
+<br>
 
->>C. Optimized CNN Model.
->>The most advanced model in the project, which uses techniques such as batch normalization (Batch Normalization) and dropout, which allows for improve generalization and reduce >>overtraining. The model has been optimized also in terms of the number of layers, the number of neurons and the activation function. Thanks to it achieves high performance in image >>classification.
+## Zastosowanie sieci neuronowych i głębokiego uczenia
+
+### Cel
+
+Celem projektu jest zbudowanie skutecznych modeli głębokiego uczenia, które będą w stanie klasyfikować obrazy ze zbioru CIFAR-10.
+
+### Zbiór danych
+
+**CIFAR-10** — kolorowe obrazy o rozmiarze 32 × 32 piksele, podzielone na 10 klas, m.in. samolot, samochód, ptak, kot i statek.
+
+### Metody
+
+**A · Bazowy model CNN**<br>
+Podstawowy model oparty na konwolucyjnych sieciach neuronowych (CNN). Zawiera kilka warstw konwolucyjnych i poolingowych, które pozwalają wyodrębnić kluczowe cechy obrazów. Stosunkowo prosta architektura umożliwia szybki trening i uzyskanie wstępnych wyników. Ze względu na ograniczoną liczbę warstw model może mieć trudności z uchwyceniem bardziej złożonych wzorców w danych.
+
+**B · Pośredni model CNN**<br>
+Rozszerzenie modelu bazowego. Zawiera więcej warstw konwolucyjnych i większą liczbę neuronów w warstwie gęstej, co pozwala dokładniej wyodrębniać cechy obrazów i poprawić trafność klasyfikacji.
+
+**C · Zoptymalizowany model CNN**<br>
+Najbardziej zaawansowany model w projekcie. Wykorzystuje techniki takie jak normalizacja wsadowa (Batch Normalization) i dropout, które poprawiają generalizację i ograniczają przeuczenie. Model zoptymalizowano również pod względem liczby warstw, liczby neuronów i funkcji aktywacji, dzięki czemu osiąga wysoką skuteczność w klasyfikacji obrazów.
+
+### Uruchomienie
+
+```bash
+git clone --branch Project_02 --single-branch https://github.com/FilipTw/AI_Projects_In_Polish.git
+cd AI_Projects_In_Polish
+jupyter notebook Muzykant_Wowra_Twardawa_PSI_3.ipynb
+```
+
+<br>
+
+---
+
+<sub>[← 01 · Emisja CO₂](https://github.com/FilipTw/AI_Projects_In_Polish/tree/Project_01) &nbsp;&nbsp;|&nbsp;&nbsp; [Wszystkie projekty](https://github.com/FilipTw/AI_Projects_In_Polish) &nbsp;&nbsp;|&nbsp;&nbsp; [03 · Skalowanie cech →](https://github.com/FilipTw/AI_Projects_In_Polish/tree/Project_03)</sub>
+
+<sub>Autorzy: Muzykant · Wowra · Twardawa &nbsp;·&nbsp; Licencja [MIT](LICENSE) &nbsp;·&nbsp; [Do góry ↑](#top)</sub>

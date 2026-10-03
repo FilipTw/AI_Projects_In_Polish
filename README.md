@@ -1,33 +1,53 @@
-# AI_Projects_In_Polish
-Some simple projects from AI issues in translation into Polish.
-## Comparison of classical machine learning models and artificial neural networks (MLPs)
+<a id="top"></a>
 
->>1. Objective:
->>
->>The goal of the project is to predict the level of carbon dioxide (CO₂) emissions from vehicles depending on their characteristics using machine learning algorithms, along with >>analyzing the dataset and comparing the effectiveness of the prediction techniques used.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-01-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-01-light.svg">
+  <img alt="Projekt 01 — Emisja CO₂ — modele klasyczne kontra sieć MLP" src="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-01-light.svg" width="100%">
+</picture>
 
-## Methods:
->>A. Linear regression
->>Linear model used as a basis for evaluating more complex methods,
->>allows quick results while ensuring interpretability.
->>It is simple to implement, but can be less effective for complex data
->>with non-linear relationships.
->>
->>B. K-Nearest Neighbors (kNN)
->>An algorithm based on classification by nearest neighbors.
->>Due to its simplicity, it is often used in exploratory tasks,
->>Its effectiveness depends on the appropriate choice of the number of neighbors (parameter k)
->>and distance, which makes it sensitive to data scaling.
->>
->>C. MLP (Multi-Layer Perceptron) - basic model
->>A basic neural network model with two hidden layers.
->>It is capable of solving nonlinear problems by learning complex relationships in data.
->>It is characterized by moderate computational complexity
->>and provides a starting point for more advanced implementations.
->>
->>D. MLP (Multi-Layer Perceptron) optimized model.
->>An advanced neural network model with multiple hidden layers, optimized
->>in terms of architecture (number of neurons, layers), activation function and hyper parameters,
->>such as learning rate and regularization.
->>It provides high performance and accuracy, especially in tasks requiring
->>analysis of large and complex data sets.
+<br>
+
+[**← Wszystkie projekty**](https://github.com/FilipTw/AI_Projects_In_Polish) &nbsp;·&nbsp; [Notatnik](./Muzykant_Wowra_Twardawa_PSI_2.ipynb) &nbsp;·&nbsp; [Raport PDF](./Muzykant_Wowra_Twardawa_PSI_2.pdf) &nbsp;·&nbsp; [Dane](./CO2-Emissions_Canada.csv)
+
+<br>
+
+## Porównanie klasycznych modeli uczenia maszynowego i sztucznych sieci neuronowych (MLP)
+
+### Cel
+
+Celem projektu jest przewidywanie poziomu emisji dwutlenku węgla (CO₂) przez pojazdy w zależności od ich cech, z wykorzystaniem algorytmów uczenia maszynowego, wraz z analizą zbioru danych i porównaniem skuteczności zastosowanych technik predykcji.
+
+### Zbiór danych
+
+**CO₂ Emissions Canada** (`CO2-Emissions_Canada.csv`) — dane o pojazdach: m.in. klasa pojazdu, pojemność silnika, liczba cylindrów, skrzynia biegów, rodzaj paliwa, zużycie paliwa oraz emisja CO₂ w g/km.
+
+### Metody
+
+**A · Regresja liniowa**<br>
+Model liniowy stanowiący punkt odniesienia dla bardziej złożonych metod. Pozwala szybko uzyskać wyniki przy zachowaniu interpretowalności. Jest prosty w implementacji, ale może być mniej skuteczny dla złożonych danych z zależnościami nieliniowymi.
+
+**B · k najbliższych sąsiadów (kNN)**<br>
+Algorytm oparty na najbliższych sąsiadach. Ze względu na prostotę często stosowany w zadaniach eksploracyjnych. Jego skuteczność zależy od właściwego doboru liczby sąsiadów (parametr k) i miary odległości, co czyni go wrażliwym na skalowanie danych.
+
+**C · MLP — model bazowy**<br>
+Podstawowy model sieci neuronowej z dwiema warstwami ukrytymi. Potrafi rozwiązywać problemy nieliniowe, ucząc się złożonych zależności w danych. Charakteryzuje się umiarkowaną złożonością obliczeniową i stanowi punkt wyjścia dla bardziej zaawansowanych implementacji.
+
+**D · MLP — model zoptymalizowany**<br>
+Zaawansowany model sieci neuronowej z wieloma warstwami ukrytymi, zoptymalizowany pod względem architektury (liczba neuronów i warstw), funkcji aktywacji oraz hiperparametrów, takich jak współczynnik uczenia i regularyzacja. Zapewnia wysoką wydajność i dokładność, szczególnie w zadaniach wymagających analizy dużych i złożonych zbiorów danych.
+
+### Uruchomienie
+
+```bash
+git clone --branch Project_01 --single-branch https://github.com/FilipTw/AI_Projects_In_Polish.git
+cd AI_Projects_In_Polish
+jupyter notebook Muzykant_Wowra_Twardawa_PSI_2.ipynb
+```
+
+<br>
+
+---
+
+<sub>[← 06 · Klasteryzacja](https://github.com/FilipTw/AI_Projects_In_Polish/tree/Project_06) &nbsp;&nbsp;|&nbsp;&nbsp; [Wszystkie projekty](https://github.com/FilipTw/AI_Projects_In_Polish) &nbsp;&nbsp;|&nbsp;&nbsp; [02 · CIFAR-10 →](https://github.com/FilipTw/AI_Projects_In_Polish/tree/Project_02)</sub>
+
+<sub>Autorzy: Muzykant · Wowra · Twardawa &nbsp;·&nbsp; Licencja [MIT](LICENSE) &nbsp;·&nbsp; [Do góry ↑](#top)</sub>

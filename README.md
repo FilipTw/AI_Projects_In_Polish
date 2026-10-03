@@ -1,17 +1,49 @@
-# AI_Projects_In_Polish
-Some simple projects from AI issues in translation into Polish.
+<a id="top"></a>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-06-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-06-light.svg">
+  <img alt="Projekt 06 — Klasteryzacja — segmentacja obrazu i analiza skupień" src="https://raw.githubusercontent.com/FilipTw/AI_Projects_In_Polish/main/assets/header-06-light.svg" width="100%">
+</picture>
+
+<br>
+
+[**← Wszystkie projekty**](https://github.com/FilipTw/AI_Projects_In_Polish) &nbsp;·&nbsp; [Notatnik](./Twardawa_Filip_ML.ipynb) &nbsp;·&nbsp; [Raport PDF](./Twardawa_Filip_ML.pdf)
+
+<br>
+
+## Uczenie nienadzorowane i klasteryzacja
+
+### Cel
+
+Celem ćwiczenia jest segmentacja obrazu z użyciem algorytmu k-średnich oraz analiza zbioru danych z wykorzystaniem algorytmów klasteryzacji. Zadanie pierwsze polega na segmentacji obrazu według kolorów, a zadanie drugie — na analizie zbioru iris.csv różnymi metodami klasteryzacji w celu odkrycia ukrytych wzorców.
+
+### Zbiór danych
+
+**a) palm_tree.jpg** — obraz przedstawiający sylwetki palm na tle nieba i wybrzeża.
+
+**b) iris.csv** — zbiór dotyczący trzech gatunków irysów, opisanych długością i szerokością płatków oraz działek kielicha.
+
+### Metody
+
+**A · Algorytm k-średnich**<br>
+Grupuje dane w zadaną liczbę skupień, przypisując każdy punkt do najbliższego centroidu. W pierwszym zadaniu punktami są piksele obrazu w przestrzeni kolorów RGB.
+
+**B · Klasteryzacja aglomeracyjna**<br>
+Metoda hierarchiczna, która łączy najbliższe grupy punktów w coraz większe skupienia.
+
+### Uruchomienie
+
+```bash
+git clone --branch Project_06 --single-branch https://github.com/FilipTw/AI_Projects_In_Polish.git
+cd AI_Projects_In_Polish
+jupyter notebook Twardawa_Filip_ML.ipynb
+```
+
+<br>
 
 ---
 
-1 Objective.
+<sub>[← 05 · Regresja logistyczna](https://github.com/FilipTw/AI_Projects_In_Polish/tree/Project_05) &nbsp;&nbsp;|&nbsp;&nbsp; [Wszystkie projekty](https://github.com/FilipTw/AI_Projects_In_Polish) &nbsp;&nbsp;|&nbsp;&nbsp; [01 · Emisja CO₂ →](https://github.com/FilipTw/AI_Projects_In_Polish/tree/Project_01)</sub>
 
-The goal of the lab is to perform image segmentation using the algorithm of
-k-means and analyze the dataset using clustering algorithms.
-Task one involves implementing color segmentation of an image,
-and task two is to analyze the iris.csv dataset using various clustering methods
-to discover hidden patterns.
-
-
-Datasets:
-
-Image palm_tree.jpg showing silhouettes of palm trees against the sky and coast.
+<sub>Autor: Filip Twardawa &nbsp;·&nbsp; Licencja [MIT](LICENSE) &nbsp;·&nbsp; [Do góry ↑](#top)</sub>
